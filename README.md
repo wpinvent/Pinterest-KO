@@ -15,4 +15,3 @@ Quick experiment to use Knockout.js to recreate a Pinterest-like interface.
 ##TODO:
 
 * Rename index.js
-* Add removal to only top right portion of tile (neat x image to come)

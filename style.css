@@ -1,0 +1,55 @@
+html, body
+{
+	margin    : 0px auto;
+	background: #F7F5F5;
+}
+#container
+{
+	position: relative;
+}
+#container .tile
+{
+	position       : absolute;
+	background     : #fff;
+	border         : solid 1px transparent;
+	padding        : 20px 20px;
+	box-shadow     : 0 1px 3px rgba(34, 25, 25, 0.4);
+	-moz-box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+	transition        : all .25s ease;
+    -webkit-transition: all .25s ease; /** Chrome & Safari **/
+    -moz-transition   : all .25s ease; /** Firefox **/
+    -o-transition     : all .25s ease; /** Opera **/
+}
+#container .tile .remove
+{
+	cursor   :  pointer;
+	position :  absolute;
+	opacity  :  0;
+	top      :  2px;
+	right    :  2px;
+	width    :  15px;
+	height   :  15px;
+	background: transparent url('remove.png') no-repeat;
+
+	transition        : all .25s ease;
+    -webkit-transition: all .25s ease; /** Chrome & Safari **/
+    -moz-transition   : all .25s ease; /** Firefox **/
+    -o-transition     : all .25s ease; /** Opera **/
+
+    transition-delay        : .25s;
+    -webkit-transition-delay: .25s;
+    -moz-transition-delay   : .25s;
+    -o-transition-delay     : .25s;
+}
+#container .tile:hover
+{
+	border-color: #ccc;
+}
+#container .tile:hover .remove
+{
+		opacity: 0.7;
+}
+#container .tile:hover .remove:hover
+{
+		opacity: 1;
+}

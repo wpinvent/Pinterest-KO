@@ -8,10 +8,13 @@
 // VM: titleViewModel
 // Purpose: create a tile and keep track of it's position
 //
+
+
 function tileViewModel(name, width, height, left, top)
 {
 	var self      =  this;
-	self.name    =  ko.observable(name);
+	var tday      =  new Date();
+	self.name     =  ko.observable('http://www.cornify.com/getacorn.php?r=' + tday.getTime() + '&url='+document.location.href);
 	self.width    =  ko.observable(width);
 	self.height   =  ko.observable(height);
 	self.left     =  ko.observable(left);
@@ -40,7 +43,7 @@ function PinterestViewModel()
 		rowIndex      =  0,
 		colIndex      =  0,
 		defWidth      =  200,
-		defPadding    =  15 + 30, //padding = 15 * 2(left and right) + 15 for margin 
+		defPadding    =  15 + 40, //padding = 15 * 2(left and right) + 15 for margin 
 		defOuterWidth =  defWidth + defPadding;
 
 	//recalculate tiles when window is done resizing
